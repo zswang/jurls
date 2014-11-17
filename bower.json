@@ -1,0 +1,32 @@
+{
+  "name": "jurls",
+  "version": "0.0.1",
+  "homepage": "https://github.com/zswang/jurls",
+  "authors": [
+    "zswang <wjhu111@21cn.com>"
+  ],
+  "description": "parse url library",
+  "main": "jurls.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "url",
+    "parse"
+  ],
+  "devDependencies": {
+    "seajs": "2.3.0",
+    "requirejs": "2.1.15"
+  },
+  "license": "MIT",
+  "ignore": [
+    "tests",
+    "src",
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/components",
+    "test",
+    "tests"
+  ]
+}
