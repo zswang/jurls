@@ -24,10 +24,13 @@
   "devDependencies": {
     "uglify-js": "2.4.15",
     "jdists": "0.3.4",
-    "jshint": "2.5.8"
+    "jshint": "2.5.8",
+    "mocha": "~1.20.1",
+    "mocha-phantomjs": "3.5.2",
+    "chai": "1.8.x"
   },
   "scripts": {
-    "test": "mocha -R spec && npm run coverage",
+    "test": "mocha -R spec",
     "dist": "jdists src/jurls.js -o jurls.js && uglifyjs jurls.js -o jurls.min.js -p 5 -c -m",
     "lint": "jshint src/*.js *.json"
   }
