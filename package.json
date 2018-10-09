@@ -2,12 +2,13 @@
   "name": "jurls",
   "title": "jurls",
   "description": "parse url library",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/zswang/jurls",
   "main": "src/jurls.js",
-  "author": [
-    "zswang <wjhu111@21cn.com>"
-  ],
+  "author": {
+    "name": "zswang",
+    "url": "http://weibo.com/zswang"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/zswang/jurls.git"
@@ -22,16 +23,16 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "devDependencies": {
-    "uglify-js": "2.4.15",
-    "jdists": "0.3.4",
-    "jshint": "2.5.8",
+    "jdists": "^2.2.4",
+    "jshint": "^2.9.6",
+    "uglify-js": "^3.4.9",
     "mocha": "~1.20.1",
     "mocha-phantomjs": "3.5.2",
     "chai": "1.8.x"
   },
   "scripts": {
     "test": "mocha -R spec",
-    "dist": "jdists src/jurls.js -o jurls.js && uglifyjs jurls.js -o jurls.min.js -p 5 -c -m",
+    "dist": "jdists src/jurls.js -o jurls.js && uglifyjs jurls.js -o jurls.min.js -c -m",
     "lint": "jshint src/*.js *.json"
   }
 }
